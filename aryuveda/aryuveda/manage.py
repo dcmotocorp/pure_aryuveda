@@ -3,7 +3,7 @@
 import os
 import sys
 
-
+# This is Manage.py file 
 def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'aryuveda.settings')
