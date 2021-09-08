@@ -22,7 +22,7 @@ class User(models.Model):
     updated_at=models.DateTimeField(auto_now=True,blank=False)
     first_time_login=models.BooleanField(default=False)
     a_ddress1 = models.CharField(max_length=255, blank=True)
-#This IS Cutomer Model For uses
+#This is cusetomer modl
 class Customer(models.Model):
     user_id=models.ForeignKey(User,on_delete=models.CASCADE)
     profile_pic=models.FileField(upload_to='medico_expert/images/',blank=True,default='default.jpg')
