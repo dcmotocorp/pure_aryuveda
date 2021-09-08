@@ -51,7 +51,7 @@ class Admin(models.Model):
     terms=models.BooleanField(default=False)
     password = models.CharField(max_length=50)
     product =models.BooleanField(default=False)
-
+# This is Cart Model
 class Cart(models.Model):
     user=models.ForeignKey(User,on_delete=models.CASCADE)
     # ordered=models.booleanField(default=False)
