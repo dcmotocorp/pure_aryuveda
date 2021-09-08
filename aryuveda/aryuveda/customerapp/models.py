@@ -8,7 +8,7 @@ class Product(models.Model):
     itemimage = models.FileField(upload_to='media/', blank=True, default='tea.jpg')
     available=models.IntegerField(default=0)
     sold = models.IntegerField(default=0)
-
+# This is Usermodel
 class User(models.Model):
     email=models.EmailField(unique=True)
     firstname = models.CharField(max_length=50, blank=True)
